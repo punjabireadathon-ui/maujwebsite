@@ -3,13 +3,10 @@ dist
 dist-ssr
 *.local
 .vite
-
-# Database (legacy location + new default)
-server/*.db
-server/*.db-journal
-server/*.db-wal
-server/*.db-shm
-data/
+.vercel
+.env
+.env.*
+!.env.example
 
 # Editor
 .vscode/*

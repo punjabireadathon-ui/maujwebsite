@@ -4,25 +4,20 @@
   "version": "0.1.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently -k -n api,web -c blue,magenta \"npm:dev:api\" \"npm:dev:web\"",
-    "dev:api": "node --watch server/index.js",
-    "dev:web": "vite",
+    "dev": "vite",
+    "dev:full": "vercel dev",
     "build": "vite build",
-    "start": "node server/index.js",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@neondatabase/serverless": "^0.9.4",
     "bcryptjs": "^2.4.3",
-    "better-sqlite3": "^11.3.0",
-    "cors": "^2.8.5",
-    "express": "^4.21.0",
     "lucide-react": "^0.469.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.3.4",
-    "concurrently": "^9.0.1",
     "vite": "^5.4.11"
   }
 }
